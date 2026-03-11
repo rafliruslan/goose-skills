@@ -247,4 +247,6 @@ MIT
 
 ## Author
 
-[Athina AI](https://athina.ai)
+[Gooseworks](https://gooseworks.sh)
+
+![goose4](https://github.com/user-attachments/assets/2bca27a7-7dc7-41da-b579-6a46f1152277)
