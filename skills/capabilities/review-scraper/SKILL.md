@@ -18,7 +18,7 @@ Requires `APIFY_API_TOKEN` env var (or `--token` flag). Install dependency: `pip
 # Trustpilot reviews
 python3 skills/review-scraper/scripts/scrape_reviews.py \
   --platform trustpilot \
-  --url "https://www.trustpilot.com/review/growthx.ai" \
+  --url "https://www.trustpilot.com/review/example.com" \
   --max-reviews 10 --output summary
 
 # G2 reviews with keyword filter

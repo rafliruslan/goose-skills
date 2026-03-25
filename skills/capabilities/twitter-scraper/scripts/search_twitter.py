@@ -5,8 +5,8 @@ Uses Twitter native search syntax (since:/until:) for date filtering
 since the actor's date params are unreliable.
 
 Usage:
-  python3 search_twitter.py --query "GrowthX.ai" --since 2026-02-15 --until 2026-02-23 --max-tweets 10
-  python3 search_twitter.py --query "@growthxai" --max-tweets 20 --output summary
+  python3 search_twitter.py --query "YourCompany" --since 2026-02-15 --until 2026-02-23 --max-tweets 10
+  python3 search_twitter.py --query "@yourhandle" --max-tweets 20 --output summary
 """
 
 import json
@@ -187,10 +187,10 @@ def main():
         epilog="""
 Examples:
   # Search for a company with date range
-  %(prog)s --query "GrowthX.ai" --since 2026-02-15 --until 2026-02-23
+  %(prog)s --query "YourCompany" --since 2026-02-15 --until 2026-02-23
 
   # Quick summary of recent mentions
-  %(prog)s --query "@growthxai" --max-tweets 20 --output summary
+  %(prog)s --query "@yourhandle" --max-tweets 20 --output summary
 
   # Search without date filtering
   %(prog)s --query "AI content marketing" --max-tweets 50

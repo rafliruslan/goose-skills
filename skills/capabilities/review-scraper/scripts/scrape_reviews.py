@@ -4,7 +4,7 @@ Scrape product reviews from G2, Capterra, or Trustpilot using Apify.
 Single script with --platform dispatch to handle all three review sources.
 
 Usage:
-  python3 scrape_reviews.py --platform trustpilot --url "https://www.trustpilot.com/review/growthx.ai" --max-reviews 10
+  python3 scrape_reviews.py --platform trustpilot --url "https://www.trustpilot.com/review/example.com" --max-reviews 10
   python3 scrape_reviews.py --platform g2 --url "https://www.g2.com/products/example/reviews" --output summary
   python3 scrape_reviews.py --platform capterra --url "https://www.capterra.com/p/12345/Example" --keywords "pricing"
 """
@@ -242,7 +242,7 @@ def main():
         epilog="""
 Examples:
   # Trustpilot reviews
-  %(prog)s --platform trustpilot --url "https://www.trustpilot.com/review/growthx.ai" --max-reviews 10
+  %(prog)s --platform trustpilot --url "https://www.trustpilot.com/review/example.com" --max-reviews 10
 
   # G2 reviews with keyword filter
   %(prog)s --platform g2 --url "https://www.g2.com/products/example/reviews" --keywords "pricing,support"

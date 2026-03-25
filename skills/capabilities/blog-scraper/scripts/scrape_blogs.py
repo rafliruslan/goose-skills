@@ -4,7 +4,7 @@ Scrape blog posts via RSS feeds (free) with Apify fallback.
 Supports RSS 2.0 and Atom feeds. Tries common feed paths automatically.
 
 Usage:
-  python3 scrape_blogs.py --urls "https://growthx.ai/blog" --days 30
+  python3 scrape_blogs.py --urls "https://example.com/blog" --days 30
   python3 scrape_blogs.py --urls "https://example.com/blog,https://other.com" --keywords "AI" --output summary
   python3 scrape_blogs.py --urls "https://example.com" --mode apify --token YOUR_TOKEN
 """
@@ -340,7 +340,7 @@ def main():
         epilog="""
 Examples:
   # Scrape a blog's RSS feed
-  %(prog)s --urls "https://growthx.ai/blog" --days 30
+  %(prog)s --urls "https://example.com/blog" --days 30
 
   # Multiple blogs with keyword filter
   %(prog)s --urls "https://blog1.com,https://blog2.com" --keywords "AI,marketing" --output summary
